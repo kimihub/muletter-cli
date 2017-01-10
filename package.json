@@ -1,0 +1,37 @@
+{
+  "name": "muletter",
+  "version": "0.1.0",
+  "description": "CLI mailer for small mailing list",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimihub/muletter.git"
+  },
+  "keywords": [
+    "letter",
+    "mailer",
+    "mailing",
+    "email",
+    "list",
+    "cli",
+    "node",
+    "js",
+    "api",
+    "util"
+  ],
+  "author": "Kimi",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/kimihub/muletter/issues"
+  },
+  "homepage": "https://github.com/kimihub/muletter#readme",
+  "preferGlobal": true,
+  "bin": {
+    "mulist": "muletter.js"
+  },
+  "engines": {
+    "node": ">= 0.6"
+  },
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
