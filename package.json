@@ -1,13 +1,14 @@
 {
   "name": "muletter",
   "version": "0.1.0",
-  "description": "CLI mailer for small mailing list",
+  "description": "CLI newsletter for small mailing list",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kimihub/muletter.git"
   },
   "keywords": [
     "letter",
+    "news",
     "mailer",
     "mailing",
     "email",
@@ -29,7 +30,8 @@
     "mulist": "muletter.js"
   },
   "engines": {
-    "node": ">= 0.6"
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
   },
   "dependencies": {
     "commander": "^2.9.0"
