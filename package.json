@@ -30,10 +30,12 @@
     "mulist": "muletter.js"
   },
   "engines": {
-    "node": ">= 4.0.0",
-    "npm": ">= 3.0.0"
+    "node": ">= 4.0.0"
   },
   "dependencies": {
-    "commander": "^2.9.0"
+    "emailjs": "^1.0.8"
+  },
+  "devDependencies": {
+    "maildev": "^0.14.0"
   }
 }

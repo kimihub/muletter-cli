@@ -29,7 +29,7 @@ Example of `config.yml`:
     smtp_password: password
     smtp_host: smtp.hostname.com
     smtp_ssl: true
-    letter_from: letter title <username@hostname.com>
+    letter_from: letter name <username@hostname.com>
     letter_subject: subject letter
 
 
@@ -63,8 +63,8 @@ Example of `list.txt`:
     Usage: muletter [options] [command] [argument]
     Commands 
       init              Check config.yml list.txt body.txt attachments
-      test   <email>    Send a letter test to <email>
-      send              Send the letter
+      test   <email>    Send the letter to <email>
+      send              Send the letter to list.txt
       help   [command]  Output usage information of [command]
       [...]
 
