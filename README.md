@@ -37,11 +37,15 @@ Once `config.yml` is created you should be able to use the `muletter` command in
 
 ## SMTP Limitations
 
-Using a SMTP server with a standard configuration and your own domain is strongly advised to make sure that your letter will not be seen as a junk mail by free mailbox services like Gmail, Yahoo or Outlook. 
+Using a SMTP server with a standard configuration is strongly advised to make sure that your letter to not be seen as a junk mail. 
 
-Plus, SMTP of these free services are too limited to send such a number of mails in the same day. 
+SMTP of free mailbox services are too limited to send such a number of mails in the same day. But some of them should be enough for a letter with a low frequency and a small mailing list.
 
-You'll also have limitations with the SMTP of your registrar or web hosting but it should be enough for a letter with a small frequency and a small mailing list (in most of case, **lower than 500 mails per day**).
+Example of SMTP you can use freely :
+
+- gmail.com (lower than 500 mails per day)
+- gandi.net (5 mails per minute, the other ones are queued and sent later)
+- godaddy.com (1000 mails per day)
 
 ## Mailing List, Body, Attachments
 
