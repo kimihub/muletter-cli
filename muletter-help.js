@@ -37,8 +37,7 @@ Example of config.yml
 
 smtp_user: username
 smtp_password: password
-smtp_host: smtp.hostname.com
-smtp_ssl: true
+smtp_service: GoDaddy
 letter_from: letter name <username@hostname.com>
 letter_subject: subject letter
 `;

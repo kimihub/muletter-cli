@@ -33,7 +33,8 @@
     "node": ">= 4.0.0"
   },
   "dependencies": {
-    "emailjs": "^1.0.8"
+    "nodemailer": "^2.7.2",
+    "nodemailer-wellknown": "^0.2.1"
   },
   "devDependencies": {
     "maildev": "^0.14.0"

@@ -32,6 +32,14 @@ Example of `config.yml`:
     letter_from: letter name <username@hostname.com>
     letter_subject: subject letter
 
+If you use a smtp service included in [nodemailer-wellknown](https://github.com/nodemailer/nodemailer-wellknown) module you can simply fill `smtp_service` instead of 'smtp_host' and 'smtp_ssl':
+
+    smtp_user: username
+    smtp_password: password
+    smtp_service: Godaddy
+    letter_from: letter name <username@hostname.com>
+    letter_subject: subject letter
+
 
 Once `config.yml` is created you should be able to use the `muletter` command in your working directory.
 
