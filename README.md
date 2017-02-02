@@ -1,5 +1,5 @@
 # µLetter
-**MuLetter** is a Command Line Interface newsletter for small mailing list
+**MuLetter** is a Command Line Interface newsletter for SMTP server
 
 ## Requirements
 
