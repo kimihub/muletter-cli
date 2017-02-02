@@ -1,12 +1,12 @@
 # µLetter
 **MuLetter** is a Command Line Interface newsletter for small mailing list
 
-## Minimum requirements
+## Requirements
 
 - [Nodejs v4](https://nodejs.org)
-- A mailing list
+- SMTP server
 
-## Install
+## Install or Update
 
 First of all, you must install `muletter` as a global module to create the `muletter` command on your system.
 
@@ -32,7 +32,7 @@ Example of `config.yml`:
     letter_from: letter name <username@hostname.com>
     letter_subject: subject letter
 
-If you use a smtp service included in [nodemailer-wellknown](https://github.com/nodemailer/nodemailer-wellknown) module you can simply fill `smtp_service` instead of 'smtp_host' and 'smtp_ssl':
+If you use a service included in [nodemailer-wellknown](https://github.com/nodemailer/nodemailer-wellknown) module you can simply fill `smtp_service` instead of 'smtp_host' and 'smtp_ssl':
 
     smtp_user: username
     smtp_password: password
