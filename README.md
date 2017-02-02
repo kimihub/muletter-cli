@@ -19,7 +19,7 @@ or
 
 ## Configuration
 
-For each mailing list you want to manage you have to create a working directory and put inside a file named `config.yml` with your SMTP server and letter configuration.
+You have to create a working directory and put inside a file named `config.yml` with your SMTP server and letter configuration.
 
 Note that if already you use [MuList](https://github.com/kimihub/mulist) to manage your mailing list, the existing working directory can be the same for MuLetter. In that case, you just have to to fill your existing `config.yml` file.
 
