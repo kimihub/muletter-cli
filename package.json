@@ -1,6 +1,6 @@
 {
   "name": "muletter",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "CLI newsletter for SMTP",
   "repository": {
     "type": "git",
@@ -27,16 +27,18 @@
   "homepage": "https://github.com/kimihub/muletter#readme",
   "preferGlobal": true,
   "bin": {
-    "mulist": "muletter.js"
+    "muletter": "muletter.js"
   },
   "engines": {
-    "node": ">= 4.0.0"
+    "node": ">=6.0.0"
   },
   "dependencies": {
-    "nodemailer": "^2.7.2",
-    "nodemailer-wellknown": "^0.2.1"
+    "nodemailer": "^3.0"
   },
   "devDependencies": {
     "maildev": "^0.14.0"
+  },
+  "scripts": {
+    "test": "node test"
   }
 }

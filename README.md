@@ -3,7 +3,7 @@
 
 ## Requirements
 
-- [Nodejs v4](https://nodejs.org)
+- [Nodejs v6](https://nodejs.org)
 - SMTP server
 
 ## Install or Update
@@ -25,17 +25,19 @@ Note that if already you use [MuList](https://github.com/kimihub/mulist) to mana
 
 Example of `config.yml`:
 
-    smtp_user: username
-    smtp_password: password
+    smtp_auth:
+        user: username
+        pass: password
     smtp_host: smtp.hostname.com
     smtp_ssl: true
     letter_from: letter name <username@hostname.com>
     letter_subject: subject letter
 
-If you use a service included in [nodemailer-wellknown](https://github.com/nodemailer/nodemailer-wellknown) module you can simply fill `smtp_service` instead of 'smtp_host' and 'smtp_ssl':
+All parameters prefixed by `smtp_` match [SMTP transport options](https://nodemailer.com/smtp) of nodemailer.
 
-    smtp_user: username
-    smtp_password: password
+So you can also use a [well-known provider](https://nodemailer.com/smtp/well-known/) included in nodemailer :
+
+    [...]
     smtp_service: Godaddy
     letter_from: letter name <username@hostname.com>
     letter_subject: subject letter
@@ -77,6 +79,20 @@ Example of `list.txt`:
       init              Check config.yml list.txt body.txt attachments
       test   <email>    Send the letter to <email>
       send              Send the letter to list.txt
+      tail              Display last logs
       help   [command]  Output usage information of [command]
       [...]
 
+## New letter => New list.txt
+
+Note that after each sent, any address of `list.txt` will be removed where mail sending succeed. For every new letter, a new mailing list should be exported. 
+
+## Exit process or failed sending 
+
+If the process exit by accident after run the command `muletter send` or if any mail sending failed caused by many reasons (SMTP or internet connection unreachable), just run again `muletter send` to continue or send again failed mail sending.
+
+## Power outages or freeze
+
+This program does not writeStream `list.txt`, so you must protect your computer or laptop against sudden power outages or freeze to avoid several sending to a same address and your SMTP blacklisted.
+
+If this happens, you might not run `muletter send` again. You just have to remove the file `.muletter/lockfile`.

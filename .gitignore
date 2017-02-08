@@ -9,3 +9,10 @@ node_modules
 # Optional npm cache directory
 .npm
 
+#.muletter
+.muletter
+config.yml
+attachments
+list.txt
+body.txt
+body.html
